@@ -1,0 +1,115 @@
+button {
+    background-color: #0077cc;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 42px;
+    cursor: pointer;
+}
+
+.small-title {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/* Global Styles */
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #0077cc;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 1;
+}
+
+nav a {
+    margin: 0rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    /* space from the sides */
+}
+
+section {
+    /* the boxes */
+    margin-bottom: 2rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 42px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    /* makes it so its in the center */
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.box {
+    width: 300px;
+    min-height: 200px;
+    /* minimal box hight*/
+    border: 1px solid #000;
+    border-radius: 42px;
+    display: flex;
+    /* makes it so it is on top of each other */
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.rounded-img {
+    object-fit: cover;
+    width: 80%;
+    /* immage size*/
+    height: 80%;
+    border-radius: 100%;
+    /* makes it a circle */
+    padding: 1.5rem;
+}
+
+.ram-titel {
+    margin: 0rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}

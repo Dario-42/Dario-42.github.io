@@ -2,9 +2,13 @@
 <html lang="en">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Download More RAM for free! Explore different RAM sizes and improve your PC performance instantly with our fun RAM download simulator.">
     <title>Download More RAM</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -22,7 +26,7 @@
 
     <main>
         <section id="info">
-            <h2>Download More RAM for FREE</h2>
+            <h2>Download More RAM For FREE</h2>
         </section>
 
         <section id="home">
@@ -34,16 +38,18 @@
                         <div class="box">
                             <div class="ram-titel">4GB - DDR4</div>
                             <div>2666 MT/s · 1.2 V</div>
-                            <img src="\immages\DDR4_4GB_RAM.png" alt="file not found" class="rounded-img">
-                            <button id="download"
-                                onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">Download</button>
+                            <img src="/images/DDR4_4GB_RAM.png" alt="4 GB DDR4 Module" class="rounded-img">
+                            <button class="download" onclick="window.location.href='downloadPage.html'">
+                                Download
+                            </button>
                         </div>
                         <div class="box">
                             <div class="ram-titel">8GB - DDR4</div>
                             <div>2666 MT/s MT/s · 1.2 V</div>
-                            <img src="\immages\DDR4_8GB_RAM.png" alt="file not found" class="rounded-img">
-                            <button id="download"
-                                onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">Download</button>
+                            <img src="/images/DDR4_8GB_RAM.png" alt="8 GB DDR4 Module" class="rounded-img">
+                            <button class="download" onclick="window.location.href='downloadPageAudio.html'">
+                                Download
+                            </button>
                         </div>
                     </div>
 
@@ -51,16 +57,20 @@
                         <div class="box">
                             <div class="ram-titel">16GB - DDR4</div>
                             <div>3200 MT/s · 1.35 V</div>
-                            <img src="\immages\DDR4_16GB_RAM.png" alt="file not found" class="rounded-img">
-                            <button id="download"
-                                onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">Download</button>
+                            <img src="/images/DDR4_16GB_RAM.png" alt="16 GB DDR4 Module" class="rounded-img">
+                            <button class="download"
+                                onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank', 'noopener,noreferrer')">
+                                Download
+                            </button>
                         </div>
                         <div class="box">
                             <div class="ram-titel">32GB - DDR4</div>
                             <div>3200 MT/s · 1.35 V</div>
-                            <img src="\immages\DDR4_32GB_RAM.png" alt="file not found" class="rounded-img">
-                            <button id="download"
-                                onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">Download</button>
+                            <img src="/images/DDR4_32GB_RAM.png" alt="32 GB DDR4 Module" class="rounded-img">
+                            <button class="download"
+                                onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank', 'noopener,noreferrer')">
+                                Download
+                            </button>
                         </div>
                     </div>
 
@@ -68,24 +78,41 @@
                         <div class="box">
                             <div class="ram-titel">16GB - DDR5</div>
                             <div>7200 MT/s · 1.35 V</div>
-                            <img src="\immages\DDR5_16GB_RAM.png" alt="file not found" class="rounded-img">
-                            <button id="download"
-                                onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">Download</button>
+                            <img src="/images/DDR5_16GB_RAM.png" alt="16 GB DDR5 Module" class="rounded-img">
+                            <button class="download"
+                                onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank', 'noopener,noreferrer')">
+                                Download
+                            </button>
                         </div>
                         <div class="box">
                             <div class="ram-titel">32GB - DDR5</div>
                             <div>7200 MT/s · 1.35 V</div>
-                            <img src="\immages\DDR5_32GB_RAM.png" alt="file not found" class="rounded-img">
-                            <button id="download"
-                                onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">Download</button>
+                            <img src="/images/DDR5_32GB_RAM.png" alt="32 GB DDR5 Module" class="rounded-img">
+                            <button class="download"
+                                onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank', 'noopener,noreferrer')">
+                                Download
+                            </button>
                         </div>
                     </div>
                 </div>
 
                 <br>
 
-                <button id="Button">Click</button>
-                <p id="text">clicks:</p>
+                <button id="Button">AI Assistent</button>
+
+                <!-- AI Chat Box -->
+                <div id="chatBox">
+                    <div id="chatHeader">AI Assistent</div>
+
+                    <div id="chatContent"></div>
+
+                    <form id="chatForm">
+                        <label for="chatInput" class="sr-only">Nachricht</label><br>
+                        <input id="chatInput" type="text" placeholder="Nachricht..." autocomplete="off">
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+
             </div>
         </section>
 
@@ -97,7 +124,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2042 - no rights reserved</p>
+        <p>&copy; 2042 - no rights reserved, none at all.</p>
     </footer>
 
     <script src="script.js"></script>

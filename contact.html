@@ -1,380 +1,578 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Contact</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Contact page</h1>
-    <a href="index.html">Back to home</a>
+    <header>
+        <h1>Contact</h1>
+        <nav>
+            <a href="index.html">Back to home</a>
+        </nav>
+    </header>
 
-    <br>
-    <br>
 
-    <form action="fomular.php" method="post">
 
-        <div>
-            <label>Gender *</label><br>
-            <input type="radio" name="salutation" id="female" value="Female" required>
-            <label for="female">Female</label>
-            <input type="radio" name="salutation" id="male" value="Male">
-            <label for="male">Male</label>
-            <input type="radio" name="salutation" id="other" value="Other">
-            <label for="other">Other</label>
-        </div>
+    <main>
+
+        <section id="info">
+            <h2>Fill out the form to contact me</h2>
+        </section>
 
-        <br>
+        <section id="home">
 
-        <div>
-            <label for="FirstName">First Name *</label><br>
-            <input type="text" id="FirstName" name="FirstName" minlength="1" maxlength="30" required />
-        </div>
+            <form action="https://gibm.becknet.ch/formular/formular.php" method="post">
+
+                <h3>Contact</h3>
 
-        <br>
+                <div>
+                    <label for="Email_address">Email address *</label><br>
+                    <input type="email" id="Email_address" name="Email address" minlength="1" maxlength="50"
+                        placeholder="max@example.com" required>
+                </div>
+
+                <br>
 
-        <div>
-            <label for="LastName">Last Name *</label><br>
-            <input type="text" id="LastName" name="LastName" minlength="1" maxlength="30" required />
-        </div>
+                <div>
+                    <label for="Buissnes_Email_address">Buissnes Email address *</label><br>
+                    <input type="email" id="Buissnes_Email_address" name="Buissnes Email address" minlength="1"
+                        maxlength="50" placeholder="buissnes@example.com" required>
+                </div>
+
+                <br>
 
-        <br>
+                <div>
+                    <label for="Private_Email_address">Private Email address *</label><br>
+                    <input type="email" id="Private_Email_address" name="Private Email address" minlength="1"
+                        maxlength="50" placeholder="private@example.com" required>
+                </div>
+
+                <br>
 
-        <div>
-            <label for="Email address">Email address *</label><br>
-            <input type="text" id="Email address" name="Email address" minlength="1" maxlength="50" required />
-        </div>
+                <div>
+                    <label for="Phone_number">Phone number *</label><br>
+                    <input type="tel" id="Phone_number" name="Phone number" minlength="1" maxlength="20"
+                        placeholder="+11 11 111 111" required>
+                </div>
+
+                <br>
 
-        <br>
+                <div>
+                    <label for="Buissnes_phone_number">Buissnes phone number *</label><br>
+                    <input type="tel" id="Buissnes_phone_number" name="Buissnes phone number" minlength="1"
+                        maxlength="20" placeholder="+22 22 222 222" required>
+                </div>
+
+                <br>
 
-        <div>
-            <label for="Buissnes Email address">Buissnes Email address *</label><br>
-            <input type="text" id="Buissnes Email address" name="Buissnes Email address" minlength="1" maxlength="50"
-                required />
-        </div>
+                <div>
+                    <label for="Private_phone_number">Private phone number *</label><br>
+                    <input type="text" id="Private_phone_number" name="Private phone number" minlength="1"
+                        maxlength="20" placeholder="+33 33 333 333" required>
+                </div>
+
+                <br>
 
-        <br>
+                <div>
+                    <label for="Preferred_contact_method">Preferred contact method</label>
+                    <br>
+                    <select id="Preferred_contact_method" name="Preferred contact method">
+                        <option value="">Select</option>
+                        <option value="Email address">Email address</option>
+                        <option value="Buissnes Email address">Buissnes Email address</option>
+                        <option value="Private Email address">Private Email address</option>
+                        <option value="Phone number">Phone number</option>
+                        <option value="Buissnes phone number">Buissnes phone number</option>
+                        <option value="Private phone number">Private phone number</option>
+                    </select>
+
+                </div>
 
-        <div>
-            <label for="Private Email address">Private Email address *</label><br>
-            <input type="text" id="Private Email address" name="Private Email address" minlength="1" maxlength="20"
-                required />
-        </div>
+                <h3>Person</h3>
 
-        <br>
+                <div>
+                    <label>Gender *</label><br>
+                    <input type="radio" name="salutation" id="female" value="Female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" name="salutation" id="male" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="salutation" id="other" value="Other">
+                    <label for="other">Other</label>
+                </div>
 
-        <div>
-            <label for="Phone number">Phone number *</label><br>
-            <input type="text" id="Phone number" name="Phone number" minlength="1" maxlength="20" required />
-        </div>
+                <br>
+
+                <div>
+                    <label for="FirstName">First Name *</label><br>
+                    <input type="search" id="FirstName" name="FirstName" minlength="1" maxlength="30" placeholder="Max"
+                        required>
+                </div>
 
-        <br>
+                <br>
+
+                <div>
+                    <label for="LastName">Last Name *</label><br>
+                    <input type="search" id="LastName" name="LastName" minlength="1" maxlength="30"
+                        placeholder="Mustermann" required>
+                </div>
 
-        <div>
-            <label for="Buissnes phone number">Buissnes phone number *</label><br>
-            <input type="text" id="Buissnes phone number" name="Buissnes phone number" minlength="1" maxlength="20"
-                required />
-        </div>
+                <br>
+
+                <div>
+                    <label for="Goverment_ID">Goverment ID</label><br>
+                    <input type="file" id="Goverment_ID" name="Goverment ID"
+                        accept=".png, .jpg, .jpeg, .gif, .bmp, .webp">
+                </div>
 
-        <br>
+                <br>
+
+                <div>
+                    <label for="Date_of_birth">Date of birth *</label><br>
+                    <input type="date" id="Date_of_birth" name="Date of birth" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Birth_Certificate">Birth Certificate</label><br>
+                    <input type="file" id="Birth_Certificate" name="Birth Certificate"
+                        accept=".png, .jpg, .jpeg, .gif, .bmp, .webp">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Street_address">Street address *</label><br>
+                    <input type="text" id="Street_address" name="Street address" minlength="1" maxlength="100"
+                        placeholder="StreetsStreet 1" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Coordinates">Coordinates *</label><br>
+                    <input type="text" id="Coordinates" name="Coordinates" minlength="10" maxlength="40"
+                        placeholder="48°51'42.67&quot;N 2°21'54.10&quot;E" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="State">State *</label><br>
+                    <input type="text" id="State" name="State" minlength="1" maxlength="50" placeholder="Florida"
+                        required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Province">Province *</label><br>
+                    <input type="text" id="Province" name="Province" minlength="1" maxlength="50"
+                        placeholder="Miami-Dade County" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Postal/ZIP_code">Postal/ZIP code *</label><br>
+                    <input type="text" id="Postal/ZIP_code" name="Postal/ZIP code" minlength="1" maxlength="10"
+                        placeholder="33101" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Country">Country *</label><br>
+                    <input type="text" id="Country" name="Country" minlength="1" maxlength="50"
+                        placeholder="United States of America" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Nationality">Nationality *</label><br>
+                    <input type="text" id="Nationality" name="Nationality" minlength="1" maxlength="50"
+                        placeholder="American" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Passport">Passport</label><br>
+                    <input type="file" id="Passport" name="Passport" accept=".png, .jpg, .jpeg, .gif, .bmp, .webp">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Languages_spoken">Languages spoken *</label><br>
+                    <input type="text" id="Languages_spoken" name="Languages spoken" minlength="1" maxlength="500"
+                        placeholder="English, ..." required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Language_preference">Language preference *</label><br>
+                    <input type="text" id="Language_preference" name="Language preference" minlength="1" maxlength="50"
+                        placeholder="English" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="timezone">Time zone</label>
+                    <br>
+                    <select id="timezone" name="timezone">
+                        <option value="">Select</option>
+
+                        <option value="UTC-12">(UTC-12:00) Baker Island</option>
+                        <option value="UTC-11">(UTC-11:00) American Samoa</option>
+                        <option value="UTC-10">(UTC-10:00) Hawaii</option>
+                        <option value="UTC-9">(UTC-09:00) Alaska</option>
+                        <option value="UTC-8">(UTC-08:00) Pacific Time (US & Canada)</option>
+                        <option value="UTC-7">(UTC-07:00) Mountain Time (US & Canada)</option>
+                        <option value="UTC-6">(UTC-06:00) Central Time (US & Canada)</option>
+                        <option value="UTC-5">(UTC-05:00) Eastern Time (US & Canada)</option>
+                        <option value="UTC-4">(UTC-04:00) Atlantic Time</option>
+                        <option value="UTC-3">(UTC-03:00) Brazil, Argentina</option>
+                        <option value="UTC-2">(UTC-02:00) South Georgia</option>
+                        <option value="UTC-1">(UTC-01:00) Azores</option>
+                        <option value="UTC+0">(UTC+00:00) UTC / London</option>
+                        <option value="UTC+1">(UTC+01:00) Central European Time</option>
+                        <option value="UTC+2">(UTC+02:00) Eastern European Time</option>
+                        <option value="UTC+3">(UTC+03:00) Moscow</option>
+                        <option value="UTC+4">(UTC+04:00) Dubai</option>
+                        <option value="UTC+5">(UTC+05:00) Pakistan</option>
+                        <option value="UTC+5:30">(UTC+05:30) India</option>
+                        <option value="UTC+6">(UTC+06:00) Bangladesh</option>
+                        <option value="UTC+7">(UTC+07:00) Thailand</option>
+                        <option value="UTC+8">(UTC+08:00) China / Singapore</option>
+                        <option value="UTC+9">(UTC+09:00) Japan / Korea</option>
+                        <option value="UTC+10">(UTC+10:00) Australia Eastern</option>
+                        <option value="UTC+11">(UTC+11:00) Solomon Islands</option>
+                        <option value="UTC+12">(UTC+12:00) New Zealand</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Birthplace">Birthplace *</label><br>
+                    <input type="text" id="Birthplace" name="Birthplace" minlength="1" maxlength="50"
+                        placeholder="Miami, FL" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Religion">Religion *</label><br>
+                    <input type="text" id="Religion" name="Religion" minlength="1" maxlength="50" placeholder="Atheist"
+                        required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Education_history">Education history *</label><br>
+                    <input type="text" id="Education_history" name="Education history" minlength="1" maxlength="50"
+                        placeholder="School X, School Y, School Z" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Favorite_color">Favorite color *</label><br>
+                    <input type="text" id="Favorite_color" name="Favorite color" minlength="1" maxlength="20"
+                        placeholder="blue" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Favorite_color_as_color">Favorite color as color *</label><br>
+                    <input type="color" id="Favorite_color_as_color" name="Favorite color as color">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Favorite_food">Favorite food *</label><br>
+                    <input type="text" id="Favorite_food" name="Favorite food" minlength="1" maxlength="50"
+                        placeholder="Pizza">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Health_conditions/allergies">Health conditions/allergies *</label><br>
+                    <input type="text" id="Health_conditions/allergies" name="Health conditions/allergies" minlength="1"
+                        maxlength="50" placeholder="Healthy" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Pet_ownership">Pet ownership *</label><br>
+                    <input type="text" id="Pet_ownership" name="Pet ownership" minlength="1" maxlength="50"
+                        placeholder="1 Cat" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Number_of_children">Number of children *</label><br>
+                    <input type="number" id="Number_of_children" name="Number of children" min="0" max="99"
+                        placeholder="0" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Sleep_schedule">Sleep schedule *</label><br>
+                    <input type="text" id="Sleep_schedule" name="Sleep schedule" minlength="1" maxlength="50"
+                        placeholder="10:00 pm - 6:00 am" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="hobbies">hobbies *</label><br>
+                    <input type="text" id="hobbies" name="hobbies" minlength="1" maxlength="30" placeholder="Golf, ..."
+                        required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Additional_personal_information">Additional personal information *</label><br>
+                    <input type="text" id="Additional_personal_information" name="Additional personal information"
+                        minlength="1" maxlength="300" placeholder="none" required>
+                </div>
+
+                <h3>Company</h3>
+
+                <div>
+                    <label for="Company/Organization_name">Company/Organization name *</label><br>
+                    <input type="text" id="Company/Organization_name" name="Company/Organization name" minlength="1"
+                        maxlength="50" placeholder="Company inc." required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Company/Organization_Website">Company/Organization Website *</label><br>
+                    <input type="url" id="Company/Organization_Website" name="Company/Organization Website"
+                        minlength="1" maxlength="100" placeholder="www.example.com" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Department">Department *</label><br>
+                    <input type="text" id="Department" name="Department" minlength="1" maxlength="50"
+                        placeholder="Buissnes" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Role/position">Role/position *</label><br>
+                    <input type="text" id="Role/position" name="Role/position" minlength="1" maxlength="30"
+                        placeholder="Manager" required>
+                </div>
+
+                <br>
 
-        <div>
-            <label for="Private phone number">Private phone number *</label><br>
-            <input type="text" id="Private phone number" name="Private phone number" minlength="1" maxlength="20"
-                required />
-        </div>
+                <div>
+                    <label for="Employee_ID">Employee ID *</label><br>
+                    <input type="text" id="Employee_ID" name="Employee ID" minlength="1" maxlength="30"
+                        placeholder="0001" required>
+                </div>
 
-        <br>
+                <br>
 
-        <div>
-            <label for="Preferred contact method">Preferred contact method *</label><br>
-            <input type="text" id="Preferred contact method" name="Preferred contact method" minlength="1"
-                maxlength="30" required />
-        </div>
+                <div>
+                    <label for="Job_title">Job title *</label><br>
+                    <input type="text" id="Job_title" name="Job title" minlength="1" maxlength="30"
+                        placeholder="Consultant" required>
+                </div>
 
-        <br>
+                <br>
 
-        <div>
-            <label for="Date of birth">Date of birth *</label><br>
-            <input type="text" id="Date of birth" name="Date of birth" minlength="1" maxlength="10" required />
-        </div>
+                <div>
+                    <label for="Supervisor_name">Supervisor name *</label><br>
+                    <input type="text" id="Supervisor_name" name="Supervisor name" minlength="1" maxlength="30"
+                        placeholder="Peter Mustermann" required>
+                </div>
 
-        <br>
+                <br>
 
-        <div>
-            <label for="Street address">Street address *</label><br>
-            <input type="text" id="Street address" name="Street address" minlength="1" maxlength="50" required />
-        </div>
+                <div>
+                    <label for="Supervisor_Email">Supervisor Email *</label><br>
+                    <input type="email" id="Supervisor_Email" name="Supervisor Email" minlength="1" maxlength="30"
+                        placeholder="supervisor@example.com" required>
+                </div>
 
-        <br>
+                <br>
 
-        <div>
-            <label for="State">State *</label><br>
-            <input type="text" id="State" name="State" minlength="1" maxlength="30" required />
-        </div>
+                <div>
+                    <label for="Work_location">Work location *</label><br>
+                    <input type="text" id="Work_location" name="Work location" minlength="1" maxlength="30"
+                        placeholder="Company inc HQ - Miami" required>
+                </div>
 
-        <br>
+                <br>
 
-        <div>
-            <label for="Province">Province *</label><br>
-            <input type="text" id="Province" name="Province" minlength="1" maxlength="30" required />
-        </div>
+                <div>
+                    <label for="Work_shift_preference">Work shift preference *</label><br>
+                    <input type="text" id="Work_shift_preference" name="Work shift preference" minlength="1"
+                        maxlength="30" placeholder="9:00 am - 5:00 pm" required>
+                </div>
 
-        <br>
+                <br>
 
-        <div>
-            <label for="Postal/ZIP code">Postal/ZIP code *</label><br>
-            <input type="text" id="Postal/ZIP code" name="Postal/ZIP code" minlength="1" maxlength="10" required />
-        </div>
+                <div>
+                    <label>Employee status *</label><br>
 
-        <br>
+                    <input type="radio" id="employee_hired" name="Employee_status" value="Hired" required>
+                    <label for="employee_hired">Hired</label><br>
 
-        <div>
-            <label for="Country">Country *</label><br>
-            <input type="text" id="Country" name="Country" minlength="1" maxlength="30" required />
-        </div>
+                    <input type="radio" id="employee_probation" name="Employee_status" value="On Probation">
+                    <label for="employee_probation">On Probation</label><br>
 
-        <br>
+                    <input type="radio" id="employee_intern" name="Employee_status" value="Intern">
+                    <label for="employee_intern">Intern</label><br>
 
-        <div>
-            <label for="Nationality">Nationality *</label><br>
-            <input type="text" id="Nationality" name="Nationality" minlength="1" maxlength="30" required />
-        </div>
+                    <input type="radio" id="employee_contractor" name="Employee_status" value="Contractor">
+                    <label for="employee_contractor">Contractor</label><br>
 
-        <br>
+                    <input type="radio" id="employee_former" name="Employee_status" value="Former Employee">
+                    <label for="employee_former">Former Employee</label><br>
+                </div>
 
-        <div>
-            <label for="Languages spoken">Languages spoken *</label><br>
-            <input type="text" id="Languages spoken" name="Languages spoken" minlength="1" maxlength="500" required />
-        </div>
+                <br>
 
-        <br>
+                <div>
+                    <label for="Years_at_company"> Years at company *</label><br>
+                    <input type="number" id="Years_at_company" name="Years at company" min="0" max="99" placeholder="10"
+                        required>
+                </div>
 
-        <div>
-            <label for="Language preference">Language preference *</label><br>
-            <input type="text" id="Language preference" name="Language preference" minlength="1" maxlength="50"
-                required />
-        </div>
+                <br>
 
-        <br>
+                <div>
+                    <label for="Work_experience">Years of Work experience *</label><br>
+                    <input type="number" id="Work_experience" name="Work experience" min="0" max="99"
+                        placeholder="20" required>
+                </div>
 
-        <div>
-            <label for="Time zone">Time zone *</label><br>
-            <input type="text" id="Time zone" name="Time zone" minlength="1" maxlength="10" required />
-        </div>
+                <br>
 
-        <br>
+                <div>
+                    <label for="Projects_involved_in">Projects involved in *</label><br>
+                    <input type="text" id="Projects_involved_in" name="Projects involved in" minlength="1"
+                        maxlength="30" placeholder="Report 1, Report 2, ..." required>
+                </div>
 
-        <div>
-            <label for="Birthplace">Birthplace *</label><br>
-            <input type="text" id="Birthplace" name="Birthplace" minlength="1" maxlength="50" required />
-        </div>
+                <br>
 
-        <br>
 
-        <div>
-            <label for="Religion">Religion *</label><br>
-            <input type="text" id="Religion" name="Religion" minlength="1" maxlength="50" required />
-        </div>
 
-        <br>
 
-        <div>
-            <label for="Education history">Education history *</label><br>
-            <input type="text" id="Education history" name="Education history" minlength="1" maxlength="50" required />
-        </div>
 
-        <br>
 
-        <div>
-            <label for="Favorite color">Favorite color *</label><br>
-            <input type="text" id="Favorite color" name="Favorite color" minlength="1" maxlength="20" required />
-        </div>
 
-        <br>
 
-        <div>
-            <label for="Favorite food">Favorite food *</label><br>
-            <input type="text" id="Favorite food" name="Favorite food" minlength="1" maxlength="50" required />
-        </div>
+                <h3>Message</h3>
 
-        <br>
+                <div>
+                    <label>Reason for requesting contact *</label><br>
 
-        <div>
-            <label for="Health conditions/allergies">Health conditions/allergies *</label><br>
-            <input type="text" id="Health conditions/allergies" name="Health conditions/allergies" minlength="1"
-                maxlength="50" required />
-        </div>
+                    <input type="checkbox" id="Support" name="Reason" value="Support">
+                    <label for="Support">Support</label><br>
 
-        <br>
+                    <input type="checkbox" id="Sales" name="Reason" value="Sales">
+                    <label for="Sales">Sales</label><br>
 
-        <div>
-            <label for="Pet ownership">Pet ownership *</label><br>
-            <input type="text" id="Pet ownership" name="Pet ownership" minlength="1" maxlength="50" required />
-        </div>
+                    <input type="checkbox" id="Feedback" name="Reason" value="Feedback">
+                    <label for="Feedback">Feedback</label><br>
 
-        <br>
+                    <input type="checkbox" id="Partnership" name="Reason" value="Partnership">
+                    <label for="Partnership">Partnership</label><br>
 
-        <div>
-            <label for="Number of children">Number of children *</label><br>
-            <input type="text" id="Number of children" name="Number of children" minlength="1" maxlength="10"
-                required />
-        </div>
+                    <input type="checkbox" id="Bug_Report" name="Reason" value="Bug Report">
+                    <label for="Bug_Report">Bug Report</label><br>
 
-        <br>
+                    <input type="checkbox" id="Feature_Request" name="Reason" value="Feature Request">
+                    <label for="Feature_Request">Feature Request</label><br>
 
-        <div>
-            <label for="Sleep schedule">Sleep schedule *</label><br>
-            <input type="text" id="Sleep schedule" name="Sleep schedule" minlength="1" maxlength="50" required />
-        </div>
+                    <input type="checkbox" id="Billing" name="Reason" value="Billing">
+                    <label for="Billing">Billing</label><br>
 
-        <br>
+                    <input type="checkbox" id="Event_Inquiry" name="Reason" value="Event Inquiry">
+                    <label for="Event_Inquiry">Event Inquiry</label><br>
 
-        <!-- From here on its about the company or organasation -->
+                    <input type="checkbox" id="Technical_Assistance" name="Reason" value="Technical Assistance">
+                    <label for="Technical_Assistance">Technical Assistance</label><br>
 
-        <div>
-            <label for="Company/Organization name">Company/Organization name *</label><br>
-            <input type="text" id="Company/Organization name" name="Company/Organization name" minlength="1"
-                maxlength="30" required />
-        </div>
+                    <input type="checkbox" id="Other" name="Reason" value="Other">
+                    <label for="Other">Other</label><br>
+                </div>
 
-        <br>
+                <br>
 
-        <div>
-            <label for="Department">Department *</label><br>
-            <input type="text" id="Department" name="Department" minlength="1" maxlength="30" required />
-        </div>
+                <div>
+                    <label for="Importance">Importance *</label><br>
+                    <input type="range" id="Importance" name="Importance">
+                </div>
 
-        <br>
+                <br>
 
-        <div>
-            <label for="Role/position">Role/position *</label><br>
-            <input type="text" id="Role/position" name="Role/position" minlength="1" maxlength="30" required />
-        </div>
+                <div>
+                    <label for="Password">To ensure data quality, enter password "42" below *</label><br>
+                    <input type="password" id="Password" name="Password" minlength="1" maxlength="10" pattern="42"
+                        placeholder="43" required>
+                </div>
 
-        <br>
+                <br>
 
-        <div>
-            <label for="Employee ID">Employee ID *</label><br>
-            <input type="text" id="Employee ID" name="Employee ID" minlength="1" maxlength="30" required />
-        </div>
+                <div>
+                    <label for="Message">Message *</label><br>
+                    <input type="text" id="Message" name="Message" minlength="1" maxlength="300"
+                        placeholder="This is just an example." required>
+                </div>
 
-        <br>
+                <br>
 
-        <div>
-            <label for="Job title">Job title *</label><br>
-            <input type="text" id="Job title" name="Job title" minlength="1" maxlength="30" required />
-        </div>
+                <div>
+                    <label for="Any_additional_notes">Any additional notes *</label><br>
+                    <input type="text" id="Any_additional_notes" name="Any additional notes" minlength="1"
+                        maxlength="300" placeholder="none" required>
+                </div>
 
-        <br>
+                <br>
 
-        <div>
-            <label for="Work experience">Work experience *</label><br>
-            <input type="text" id="Work experience" name="Work experience" minlength="1" maxlength="30" required />
-        </div>
+                <div class="button-container">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
 
-        <br>
+            </form>
+        </section>
 
-        <div>
-            <label for="Supervisor name">Supervisor name *</label><br>
-            <input type="text" id="Supervisor name" name="Supervisor name" minlength="1" maxlength="30" required />
-        </div>
+        <a href="mailto:meine@email.ch"> meine@email.ch</a>
+        <a href="tel:+41791234567"> +41 79 123 45 67</a>
 
-        <br>
+    </main>
 
-        <div>
-            <label for="Supervisor Email">Supervisor Email *</label><br>
-            <input type="text" id="Supervisor Email" name="Supervisor Email" minlength="1" maxlength="30" required />
-        </div>
-
-        <br>
-
-        <div>
-            <label for="Work location">Work location *</label><br>
-            <input type="text" id="Work location" name="Work location" minlength="1" maxlength="30" required />
-        </div>
-
-        <br>
-
-        <div>
-            <label for="Work shift preference">Work shift preference *</label><br>
-            <input type="text" id="Work shift preference" name="Work shift preference" minlength="1" maxlength="30"
-                required />
-        </div>
-
-        <br>
-
-        <div>
-            <label for="Employee status">Employee status *</label><br>
-            <input type="text" id="Employee status" name="Employee status" minlength="1" maxlength="30" required />
-        </div>
-
-        <br>
-
-        <div>
-            <label for=" Years at company"> Years at company *</label><br>
-            <input type="text" id=" Years at company" name=" Years at company" minlength="1" maxlength="30" required />
-        </div>
-
-        <br>
-
-        <div>
-            <label for="Projects involved in">Projects involved in *</label><br>
-            <input type="text" id="Projects involved in" name="Projects involved in" minlength="1" maxlength="30"
-                required />
-        </div>
-
-        <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-        <div>
-            <label for="hobbies">hobbies *</label><br>
-            <input type="text" id="hobbies" name="hobbies" minlength="1" maxlength="30" required />
-        </div>
-
-        <br>
-
-        <div>
-            <label for="Any additional notes">Any additional notes *</label><br>
-            <input type="text" id="Any additional notes" name="Any additional notes" minlength="1" maxlength="300"
-                required />
-        </div>
-        <br>
-
-        <div>
-
-            <input type="submit" value="Senden">
-
-
-        </div>
-    </form>
+    <footer>
+        <p>&copy; 2042 - no rights reserved, none at all.</p>
+    </footer>
 
 </body>
 
